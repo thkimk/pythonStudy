@@ -8,7 +8,7 @@ def insertData() :
     data1, data2, data3, data4 = "", "", "", ""
     sql=""
 
-    con = sqlite3.connect("C:/CookPython/naverDB")  # DB가 저장된 폴더까지 지정
+    con = sqlite3.connect("C:/sqlite/naverDB")  # DB가 저장된 폴더까지 지정
     cur = con.cursor()
 
     data1 = edt1.get(); data2 = edt2.get(); data3 = edt3.get(); data4 = edt4.get()
@@ -24,7 +24,7 @@ def insertData() :
 
 def selectData() :
     strData1, strData2, strData3, strData4 = [], [], [], []
-    con = sqlite3.connect("C:/CookPython/naverDB")  # DB가 저장된 폴더까지 지정
+    con = sqlite3.connect("C:/sqlite/naverDB")  # DB가 저장된 폴더까지 지정
     cur = con.cursor()
     cur.execute("SELECT * FROM userTable")
     strData1.append("사용자ID"); strData2.append("사용자이름")

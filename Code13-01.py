@@ -6,7 +6,7 @@ data1, data2, data3, data4 = "", "", "", ""
 sql=""
 
 ## 메인 코드 부분 ##
-con = sqlite3.connect("C:/CookPython/naverDB")  # DB가 저장된 폴더까지 지정
+con = sqlite3.connect("C:/sqlite/naverDB")  # DB가 저장된 폴더까지 지정
 cur = con.cursor()
 
 while (True) :

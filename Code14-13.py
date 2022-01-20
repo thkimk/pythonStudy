@@ -88,13 +88,15 @@ def playGame() :
                   missileX, missileY = None, None   # 총알이 사라진다.
         if missileX != None :           # 미사일을 쏜 적이 있으면 미사일을 그려 준다.
             paintEntiry(missile, missileX, missileY)
+            paintEntiry(missile, missileX+10, missileY)
+            paintEntiry(missile, missileX+30, missileY)
             # @기능 5-2 : 우주괴물이 미사일에 맞았는지 체크한다.
         
-       # @기능 5-3 : 점수를 화면에 쓰는 함수를 호출한다.
+        # @기능 5-3 : 점수를 화면에 쓰는 함수를 호출한다.
 
-       # 화면을 업데이트한다.
-       pygame.display.update()
-       print('~', end='')
+        # 화면을 업데이트한다.
+        pygame.display.update()
+        print('~', end='')
         
 
 ## 전역 변수 선언 부분 ##

@@ -3,7 +3,7 @@ import time
 
 ## 클래스 선언 부분 ##
 class RacingCar :
-    carName = ''
+    # carName = ''
     def  __init__(self, name) :
         self.carName = name
 
